@@ -1,0 +1,618 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ---------------common css emd------------------------ */
+
+/* ---------------nav part emd------------------------ */
+#menu{
+    line-height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu_cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu_logo{
+    flex-basis: 60px;
+}
+
+.menu_logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main_menu{
+    flex-basis: 1000px;
+}
+
+.main_menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.main_menu ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 60px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+
+.main_menu ul li a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fce38a;
+    transition: all linear .3s;
+}
+
+.main_menu ul li a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background: #fce38a;
+    transition: all linear .3s;
+}
+
+.main_menu ul li a:hover{
+    color: #fce38a;
+}
+
+.main_menu ul li a:hover:after,
+.main_menu ul li a:hover:before{
+    width: 100%;
+}
+/* ---------------nav part emd------------------------ */
+
+/* ---------------banner part start------------------------ */
+#banner{
+    padding: 230px 0;
+    text-align: center;
+    position: relative;
+    z-index: -999;
+}
+
+#banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    z-index: -9;
+}
+
+
+
+.bnnr_cont h2{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
+}
+.bnnr_cont h1{
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 85px;
+    position: relative;
+}
+
+.bnnr_cont h1::after{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #fff;
+}
+
+.bnnr_cont h1 span{
+    display: block;
+}
+
+.bnnr_cont a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 30px;
+    line-height: 35px;
+    border: 3px solid #fff;
+}
+
+
+/* ---------------banner part emd------------------------ */
+
+/* ---------------about part start------------------------ */
+#about{
+    padding: 90px 0;
+    text-align: center;
+}
+
+.cmmn_heading{
+    text-align: center;
+}
+
+.cmmn_heading h3{
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 10px;
+}
+
+.cmmn_heading h4{
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.cmmn_heading h4::after{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+}
+
+.ab_raw p{
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    margin-bottom: 100px;
+    padding: 0 120px;
+}
+
+.ab_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ab_img img{
+    max-width: 100%;
+}
+
+.imgs{
+    position: relative;
+    overflow: hidden;
+}
+
+.ovrly{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    transition: all linear 1s;
+}
+
+.ovrly a{
+    color: #fff;
+    font-size: 23px;
+    transform: translateY(90px);
+}
+
+.ovrly p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    transform: translateY(104px);
+}
+
+
+.imgs:hover .ovrly{
+    height: 100%;
+}
+/* ---------------about part emd------------------------ */
+
+/* ---------------success part start------------------------ */
+#success{
+    padding: 90px 0;
+    background: #95e1d3;
+    text-align: center;
+    overflow: hidden;
+}
+
+.suc_cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.suc_col{
+    flex-basis: 240px;
+    position: relative;
+}
+
+.suc_col h2{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: ;
+}
+
+ p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.suc_col:after{
+    content: '';
+    position: absolute;
+    top: -104px;
+    left: 0;
+    width: 1px;
+    height: 323px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.suc_col:last-child:before{
+    content: '';
+    position: absolute;
+    top: -104px;
+    right: 0;
+    width: 1px;
+    height: 323px;
+    background: rgba(255, 255, 255, 0.3);
+}
+/* ---------------success part emd------------------------ */
+
+/* ---------------service part start------------------------ */
+#service{
+    padding: 100px 0;
+}
+
+.ser_cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ser_col{
+    flex-basis: 335px;
+    margin-bottom: 100px;
+}
+
+.ser_col:nth-child(4),
+.ser_col:nth-child(5),
+.ser_col:nth-child(6){
+    margin-bottom: 0;
+}
+
+
+.ser_raw{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ser_img{
+    width: 32px;
+}
+
+.ser_img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.ser_text{
+    width: 275px;
+}
+
+.ser_text h3{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+.ser_text p{
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+/* ---------------service part emd------------------------ */
+
+/* ---------------sign part start------------------------ */
+#sign{
+    padding: 70px 0;
+    background: #f8f8f8;
+}
+
+.sim_cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sin_img{
+    flex-basis: 150px;
+}
+
+.sin_img img{
+    width: 50px;
+    padding: 40px;
+    border: 3px solid #95e1d3;
+}
+
+.sig_text{
+    flex-basis: 860px;
+}
+
+.sig_text p{
+    color: #999;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sig_text h4{
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;   
+    font-family: 'Kaushan Script', cursive;
+    padding-left: 70px;
+    margin-top: 30px;
+    position: relative;
+}
+
+
+.sig_text h4:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+}
+/* ---------------sign part emd------------------------ */
+
+/* ---------------meet part start------------------------ */
+
+#meet{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.met_text{
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    margin-bottom: 80px;
+}
+
+.met_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.met_col{
+    flex-basis: 380px;
+}
+
+.met_col img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.met_col h4{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+}
+
+.met_col p{
+    color: #999;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.met_img1{
+    position: relative;
+    overflow: hidden;
+}
+
+.met_ovrly ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.met_ovrly{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    transition: all linear .3s;
+}
+
+.met_ovrly ul li a{
+    font-size: 26px;
+    color: #f38181;
+    background: #fce38a;
+    padding: 0 17px;
+    line-height: 57px;
+    margin-left: 2px;
+    transition: all linear .3s;
+}
+
+.met_ovrly ul li a:hover{
+    color: #fff;
+    background: #f38181;
+}
+
+.met_col:hover .met_ovrly{
+    height: 100%;
+}
+/* ---------------meet part emd------------------------ */
+
+/* ---------------work part start------------------------ */
+#work{
+    padding: 75px;
+    text-align: center;
+}
+
+.work_cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wo_col{
+    flex-basis: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wo_col2{
+    flex-basis: 300px;
+}
+
+.wo_col3{
+    flex-basis: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wo_img{
+    position: relative;
+    flex-basis: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wo_img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.wo_ovrly{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    transition: all linear .3s;
+}
+
+.wo_ovrly ul li{
+    margin-bottom: 20px;
+}
+
+.wo_ovrly ul li img{
+    max-width: 30px;
+}
+
+.wo_ovrly ul li h5{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wo_ovrly ul li p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.wo_ovrly ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.wo_img:hover .wo_ovrly{
+    transform: scale(1) rotate(360deg);
+}
+/* ---------------work part emd------------------------ */
+
+
+
+/* ---------------ssss part start------------------------ */
+
+/* ---------------ssss part emd------------------------ */
